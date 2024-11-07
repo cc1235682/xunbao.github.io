@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/style.css" rel="stylesheet" />
+  <script src="scripts/treasure.js" defer></script>
+  <title>寻宝游戏</title>
+</head>
+<body>
+  <!-- 添加标题，每个字母用 <span> 包裹 -->
+  <h1 class="game-title">
+    <span>寻</span><span>宝</span><span>游</span><span>戏</span>
+  </h1>
+
+  <!-- 显示三张图片（第一行） -->
+  <div class="image-row">
+    <img src="./images/1.png" alt="图书馆" class="image" id="library-img">
+    <img src="./images/6.png" alt="密码锁" class="image" id="lock-img">
+    <img src="./images/2.png" alt="神庙" class="image" id="temple-img" style="display: none;">
+  </div>
+
+  <!-- 显示守卫和宝藏图片（第二行） -->
+  <div class="image-row">
+    <img src="./images/3.png" alt="守卫" class="image" id="guard-img" style="display: none;">
+    <img src="./images/4.png" alt="宝藏" class="image" id="treasure-img" style="display: none;">
+  </div>
+  
+  <!-- 显示当前游戏状态 -->
+  <div id="status" class="status"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* 基本样式设置 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 背景色 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使页面垂直居中 */
+}
+
+/* 游戏状态的样式 */
+.status {
+    font-size: 20px;
+    margin: 20px;
+    color: #333;
+}
+
+/* 图片行容器 */
+.image-row {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 图片居中显示 */
+    gap: 20px; /* 设置图片之间的间距 */
+    margin-top: 20px;
+}
+
+/* 图片样式 */
+.image {
+    width: 200px; /* 控制图片的宽度 */
+    height: auto; /* 自动调整图片的高度，保持比例 */
+    border-radius: 10px; /* 图片圆角 */
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+
+
+/* 标题样式 */
+.game-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffcc00; /* 标题背景色 */
+    padding: 20px;
+    position: fixed; /* 固定定位 */
+    top: 20px; /* 距离顶部 20px */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 精确水平居中 */
+    border-radius: 10px; /* 标题圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 给标题添加阴影 */
+    text-align: center;
+    width: 100%; /* 宽度自动调整 */
+    max-width: 800px; /* 最大宽度限制 */
+}
+
+/* 当鼠标悬停时，给标题添加动画效果 */
+.game-title:hover {
+    cursor: pointer;
+    transform: scale(1.05) translateX(-50%); /* 保持居中的同时放大 */
+}
